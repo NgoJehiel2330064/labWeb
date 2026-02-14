@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS : Framework CSS pour le style et le responsive -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons : Bibliothèque d'icônes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <title>CEPI-Blog</title>
+
+</head>
+<body>
+
+     <!-- NAVBAR (Barre de navigation) -->
+    <!-- navbar : Composant de navigation Bootstrap -->
+    <!-- navbar-expand : TOUJOURS étendu, même sur mobile (pas de hamburger) -->
+    <!-- navbar-light : Style clair pour le texte -->
+    <!-- bg-white : Fond blanc -->
+    <!-- shadow-sm : Petite ombre portée -->
+    <nav class="navbar navbar-expand navbar-light bg-white shadow-sm">
+        <!-- container-fluid : Conteneur pleine largeur -->
+        <div class="container-fluid px-4">
+            <!-- Logo à gauche -->
+            <a class="navbar-brand" href="principal.html">
+                <img src="image/logo.png" alt="Logo" width="120" height="80">
+            </a>
+            
+            <!-- Menu toujours visible -->
+            <div class="navbar-collapse">
+                <!-- navbar-nav : Liste de navigation Bootstrap -->
+                <!-- mx-auto : Margin auto horizontal (centre l'élément) -->
+                <ul class="navbar-nav mx-auto">
+                    <!-- nav-item : Item de navigation -->
+                    <!-- me-4 : Margin-end (droite) de taille 4 -->
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="blog.html">Menu1</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="">Menu2</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Menu3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu4</a>
+                    </li>
+                </ul>
+                
+                <!-- Icône utilisateur à droite -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <!-- bi bi-person-circle : Icône Bootstrap Icons -->
+                            <!-- fs-2 : Font-size niveau 2 (grande taille) -->
+                            <i class="bi bi-person-circle fs-2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- IMAGE HERO (Grande image en haut) -->
+    <!-- container-fluid : Conteneur pleine largeur -->
+    <!-- p-0 : Padding 0 (pas d'espace intérieur) -->
+    <!-- mt-5 : Margin-top niveau 5 (pour éviter la navbar fixed) -->
+    <!-- text-center : Centrer le texte/contenu -->
+    <div class="container-fluid p-0 mt-5 text-center">
+        <!-- img-fluid : Image responsive (s'adapte à la largeur) -->
+        <!-- w-75 : Width 75% de la largeur du conteneur -->
+        <!-- mx-auto : Margin horizontal auto (centre l'image) -->
+        <!-- d-block : Display block -->
+        <img 
+            src="image/entrepreneur.png" 
+            class="img-fluid w-75 mx-auto d-block"
+            alt="Entrepreneur leader innovant">
+    </div>
+    
+    <!-- CONTENU PRINCIPAL DU BLOG -->
+    <!-- container : Conteneur avec largeur max et centré -->
+    <!-- my-5 : Margin vertical (top et bottom) niveau 5 -->
+    <div class="container my-5">
+        <!-- row : Ligne du système de grille Bootstrap -->
+        <!-- justify-content-center : Centre le contenu horizontalement -->
+        <div class="row justify-content-center">
+            <!-- col-lg-8 : Sur grand écran (lg), prend 8 colonnes sur 12 -->
+            <!-- Crée une colonne centrée de largeur moyenne -->
+            <div class="col-lg-8">
+                <!-- mb-4 : Margin-bottom niveau 4 -->
+                <h1 class="text-center mb-4">Titre du blog</h1>
+                
+                <!-- Paragraphes de contenu -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi. Suspendisse hendrerit, lacus id hendrerit vehicula, lacus turpis scelerisque ante, vitae mollis velit lorem sed mauris. Integer sodales nibh quis neque varius tempor vehicula nec elit. Curabitur id ultricies risus orci.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi. Suspendisse hendrerit, lacus id hendrerit vehicula, lacus turpis scelerisque ante, vitae mollis velit lorem sed mauris. Integer sodales nibh quis neque varius tempor vehicula nec elit. Curabitur id ultricies risus orci.</p>
+                
+                <!-- IMAGE CENTRALE AVEC LÉGENDE -->
+                <!-- figure : Élément HTML5 pour image avec caption -->
+                <!-- my-4 : Margin vertical niveau 4 -->
+                <figure class="text-center my-4">
+                    <!-- img-fluid : Image responsive -->
+                    <!-- max-width: 300px : Limite la largeur maximale -->
+                    <img src="image/cloud.png" alt="Caption" class="img-fluid" style="max-width: 300px;">
+                    <!-- figcaption : Légende de l'image -->
+                    <!-- mt-2 : Margin-top niveau 2 -->
+                    <figcaption class="mt-2">Caption</figcaption>
+                </figure>
+                
+                <!-- Suite du contenu -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi. Suspendisse hendrerit, lacus id hendrerit vehicula, lacus turpis scelerisque ante, vitae mollis velit lorem sed mauris. Integer sodales nibh quis neque varius tempor vehicula nec elit. Curabitur id ultricies risus orci.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi. Suspendisse hendrerit, lacus id hendrerit vehicula, lacus turpis scelerisque ante, vitae mollis velit lorem sed mauris. Integer sodales nibh quis neque varius tempor vehicula nec elit. Curabitur id ultricies risus orci.</p>
+                
+                <!-- SECTION COMMENTAIRES -->
+                <!-- mt-5 : Margin-top niveau 5 (grand espace) -->
+                <div class="mt-5">
+                    <h4 class="mb-4">Commentaires</h4>
+                    
+                    <!-- FORMULAIRE DE COMMENTAIRE -->
+                    <div class="mb-4">
+                        <!-- form-control : Classe Bootstrap pour inputs/textarea -->
+                        <!-- rows="5" : Hauteur du textarea en lignes -->
+                        <textarea class="form-control" rows="5" placeholder="Votre commentaire..."></textarea>
+                    </div>
+                    <!-- text-end : Aligner le contenu à droite -->
+                    <!-- mb-5 : Margin-bottom niveau 5 -->
+                    <div class="text-end mb-5">
+                        <!-- btn : Classe de base pour bouton Bootstrap -->
+                        <!-- btn-dark : Bouton de couleur foncée -->
+                        <!-- px-4 : Padding horizontal niveau 4 -->
+                        <button class="btn btn-primary px-4">Submit</button>
+                    </div>
+                    
+                    <!-- COMMENTAIRES EXISTANTS -->
+                    <!-- Premier commentaire -->
+                    <!-- d-flex : Display flex (flexbox) -->
+                    <!-- gap-3 : Espacement entre les éléments flex niveau 3 -->
+                    <div class="mb-4 d-flex gap-3">
+                        <!-- Avatar de l'utilisateur -->
+                        <div>
+                            <!-- fs-1 : Font-size niveau 1 (grande taille) -->
+                            <i class="bi bi-person-circle fs-1"></i>
+                        </div>
+                        <!-- flex-grow-1 : Prend l'espace restant disponible -->
+                        <div class="flex-grow-1">
+                            <!-- mb-0 : Margin-bottom 0 (enlève l'espace par défaut) -->
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi.</p>
+                            <!-- mt-2 : Margin-top niveau 2 -->
+                            <p class="mb-0 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Deuxième commentaire -->
+                    <div class="mb-4 d-flex gap-3">
+                        <div>
+                            <i class="bi bi-person-circle fs-1"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex.</p>
+                            <!-- Style inline pour réduire la taille de la police -->
+                            <p class="mb-0 mt-2" style="font-size: 0.9em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada nulla sit commodo sagittis, sapien dui mollis ex, non placerat tortor turpis. Etiam non mattis nulla, et tincidunt nisi. Suspendisse hendrerit, lacus id hendrerit vehicula, lacus turpis scelerisque ante, vitae mollis velit lorem sed mauris. Integer sodales nibh quis neque varius tempor vehicula nec elit. Curabitur id ultricies risus orci.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AVATAR UTILISATEUR EN BAS -->
+                <div class="mt-4">
+                    <i class="bi bi-person-circle fs-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Pied de page) -->
+    <!-- bg-light : Fond gris clair -->
+    <!-- py-4 : Padding vertical niveau 4 -->
+    <!-- mt-5 : Margin-top niveau 5 -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <!-- Section des icônes réseaux sociaux -->
+            <div class="mb-3">
+                <!-- text-dark : Texte/icône noir -->
+                <!-- me-4 : Margin-end (droite) niveau 4 -->
+                <a href="#" class="text-dark me-4 fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-4 fs-4"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-dark fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <!-- Texte de copyright -->
+            <!-- mb-1 : Margin-bottom niveau 1 (petit) -->
+            <p class="mb-1">Centre d'Expertise et de Perfectionnement en Informatique</p>
+            <!-- mb-0 : Pas de margin bottom -->
+            <p class="mb-0">2022</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript Bundle (inclut Popper pour les menus) -->
+    <!-- Nécessaire pour le menu hamburger responsive et autres composants interactifs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

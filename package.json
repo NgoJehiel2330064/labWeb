@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.97.3"
+  },
+  "devDependencies": {
+    "cypress": "^15.10.0"
+  }
+}
